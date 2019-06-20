@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<div class="jumbotron mb-0">
+    <div class="container">
+        <h3></h3>
+        <p></p>
+    </div>
+
+</div>
+
+
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand">
+                <img src="image/img1.png" style="height: 30px" alt=""/>
+            </a>
+            <button type="button" class="navbar-toggler" data-target="#mainMenu" data-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainMenu">
+                    <ul class="navbar-nav mr-auto">
+                    <li><a href="" class="nav-link">Home</a></li>
+                    <li><a href="" class="nav-link">About</a></li>
+                    <li class="dropdown"><a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">Service</a>
+
+                        <ul class="dropdown-menu bg-primary">
+                            <li><a href="" class="nav-link">Service-one</a></li>
+                            <li><a href="" class="nav-link">Service-two</a></li>
+                            <li><a href="" class="nav-link">Service-three</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="nav-link">Gallery</a></li>
+                  </ul>
+                     <ul class="navbar-nav">
+                        <li><a href="" class="nav-link" data-toggle="modal" data-target="#LoginModal">Login</a></li>
+                        <li><a href="" class="nav-link" data-toggle="modal" data-target="#SignUpModal">Sign up</a></li>
+                    </ul>
+            </div>
+        </div>
+    </nav>
+
+<div id="mainSlider" class="carousel slide"  data-ride="carousel" data-interval="1000">
+    <ol class="carousel-indicators">
+        <li data-target="mainSlider" data-slide-to="0" ></li>
+        <li data-target="mainSlider" data-slide-to="1" class="active"></li>
+        <li data-target="mainSlider" data-slide-to="2" ></li>
+        <li data-target="mainSlider" data-slide-to="3" ></li>
+    </ol>
+
+    <div class="carousel-inner">
+        <div class="carousel-item ">
+            <img src="image/1.jpg" class="w-100" height="360" alt="">
+             <div class="carousel-caption">
+                 <h1>my name is Provashish Roy</h1>
+             </div>
+        </div>
+        <div class="carousel-item active">
+            <img src="image/2.jpg" class="w-100" height="380" alt="">
+                <div class="carousel-caption">
+                    <h1>my name is Provashish Roy</h1>
+                </div>
+        </div>
+        <div class="carousel-item">
+            <img src="image/3.jpg" class="w-100" height="380" alt="">
+                <div class="carousel-caption">
+                    <h1>my name is Provashish Roy</h1>
+                </div>
+        </div>
+        <div class="carousel-item">
+            <img src="image/5.jpg" class="w-100" height="380" alt="">
+                <div class="carousel-caption">
+                    <h1>my name is Provashish Roy</h1>
+                </div>
+        </div>
+        <div class="carousel-item">
+            <img src="image/6.jpg" class="w-100" height="380" alt="">
+                <div class="carousel-caption">
+                    <h1>my name is Provashish Roy</h1>
+                </div>
+        </div>
+    </div>
+
+        <a href="#mainSlider" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#mainSlider" class="carousel-control-next" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+</div>
+
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+<!--                    <button type="button" data-toggle="modal" data-target="#Modal" class="btn btn-success">Click Me</button>-->
+<!--                    <button type="button" data-toggle="modal" data-target="#modal2" class="btn btn-success">Click Me-2</button>-->
+
+
+
+
+                    <div class="modal" id="LoginModal">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3>Log in Form</h3>
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        &Cross;
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action="" method="post">
+
+                                        <div class="form-group">
+                                            <label>Email Address</label>
+                                            <input type="email" name="email_address" class="form-control">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="password" name="password" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="" class="btn btn-success btn-block" >Submit</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="modal" id="SignUpModal">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3>Sign Up Form</h3>
+                                    <button type="button" class="close" data-dismiss="modal">
+                                        &Cross;
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="firstName">First Name</label>
+                                            <input type="text" name="first_name"  id="firstName" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lastName">Last Name</label>
+                                            <input type="text" name="last_name" id="lastName" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Email Address</label>
+                                            <input type="email" name="email_address" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="password" name="password" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label> <input type="radio" name="gender" value="male">Male</label>
+                                            <label> <input type="radio" name="gender" value="female">Female</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>District Name</label>
+                                            <select name="district_name" class="form-control">
+                                                <option>---select district name---</option>
+                                                <option value="Dhaka">Dhaka</option>
+                                                <option value="manikgonj">manikgonj</option>
+                                                <option value="comilla">comilla</option>
+                                                <option value="CTG">CTG</option>
+                                                <option value="khulna">khulna</option>
+                                                <option value="Sylhet">Sylhet</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Image</label>
+                                            <input type="file" name="image" accept="image/*" multiple/>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="" class="btn btn-success btn-block">Submit</button>
+                                        </div>
+
+
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>my name is nisha roy </h3>
+                            <p>The content us so much well</p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+    <script src="js/jquery-3.4.1%20(1).js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>
